@@ -17,7 +17,7 @@ Before you begin, make sure you have the following tools installed on your syste
 
 ## Instalation
 
-###1:
+### 1: Docker Desktop
 
 tl;dr: Just drop the .yaml release file into your project and docker desktop will do the rest for you on create
 
@@ -26,8 +26,10 @@ tl;dr: Just drop the .yaml release file into your project and docker desktop wil
 3. Open docker desktop -> Dev Enviroments -> create 
 4. Just point choice source to the repo you uploaded the .yaml file or the local folder it's in
 
-###2:
+### 2: Visual Studio Extension
+
 1.Open your workspace and install [ms-vscode-remote.remote-containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
 2.reopen the project on container
 
 ## Additional Information
