@@ -1,12 +1,11 @@
-🚀 Bun Dev Container
+ 🦕 Deno Dev Container
 ---------------------
 
-This repository provides a development environment for [Bun](https://bun.sh/) using Visual Studio Code's [Dev Containers](https://containers.dev/).
+This repository provides a development environment for [Deno](https://deno.com/) using Visual Studio Code's [Dev Containers](https://containers.dev/).
 
-## About Bun
+## About Deno
 
-Bun is a fast JavaScript all-in-one toolkit designed for developing, testing, running, and bundling JavaScript and TypeScript projects.
-This Dev Container setup streamlines the development process by providing a pre-configured environment.
+Deno (/ˈdiːnoʊ/, pronounced dee-no) is an open source JavaScript, TypeScript, and WebAssembly runtime with secure defaults and a great developer experience. It's built on V8, Rust, and Tokio.
 
 ## Prerequisites
 
@@ -16,7 +15,9 @@ Before you begin, make sure you have the following tools installed on your syste
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 
-## Easy set up, just drag and drop
+## Instalation
+
+###1:
 
 tl;dr: Just drop the .yaml release file into your project and docker desktop will do the rest for you on create
 
@@ -24,12 +25,14 @@ tl;dr: Just drop the .yaml release file into your project and docker desktop wil
 2. Copy it into the target repo/folder
 3. Open docker desktop -> Dev Enviroments -> create 
 4. Just point choice source to the repo you uploaded the .yaml file or the local folder it's in
-5. DONE
 
+###2:
+1.Open your workspace and install [ms-vscode-remote.remote-containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+2.reopen the project on container
 
 ## Additional Information
 
-For more information on Bun, check out the official [Bun documentation](https://bun.sh/docs).
+For more information on Bun, check out the official [Deno documentation](https://docs.deno.com/).
 
 If you encounter any issues or have questions, please feel free to open an issue in this repository.
 
@@ -39,4 +42,3 @@ For more information on Visual Studio Code DevContainers, refer to the [official
 
 This project is licensed under the MIT License.
 
-bump 18/06/24
