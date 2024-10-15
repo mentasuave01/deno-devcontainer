@@ -3,7 +3,7 @@ name: 'Build Deno Image'
 on:
   workflow_dispatch:
     inputs:
-      bunVersion:
+      denoVersion:
         description: 'Deno Version'
         required: true
         type: string
@@ -34,12 +34,12 @@ jobs:
           flavor: |
             latest=false
           tags: |
-            type=semver,pattern=v{{major}}.{{minor}}.{{patch}},value=v${{ inputs.bunVersion }}
-            type=semver,pattern=v{{major}}.{{minor}},value=v${{ inputs.bunVersion }}
-            type=semver,pattern=v{{major}},value=v${{ inputs.bunVersion }}
-            type=semver,pattern={{major}}.{{minor}}.{{patch}},value=v${{ inputs.bunVersion }}
-            type=semver,pattern={{major}}.{{minor}},value=v${{ inputs.bunVersion }}
-            type=semver,pattern={{major}},value=v${{ inputs.bunVersion }}
+            type=semver,pattern=v{{major}}.{{minor}}.{{patch}},value=v${{ inputs.denoVersion }}
+            type=semver,pattern=v{{major}}.{{minor}},value=v${{ inputs.denoVersion }}
+            type=semver,pattern=v{{major}},value=v${{ inputs.denoVersion }}
+            type=semver,pattern={{major}}.{{minor}}.{{patch}},value=v${{ inputs.denoVersion }}
+            type=semver,pattern={{major}}.{{minor}},value=v${{ inputs.denoVersion }}
+            type=semver,pattern={{major}},value=v${{ inputs.denoVersion }}
             type=raw,value=latest,enable=${{ inputs.setLatest }}
 
       - name: Log in to the Container registry
