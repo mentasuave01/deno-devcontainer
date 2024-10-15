@@ -1,0 +1,27 @@
+{
+    "name": "Bun",
+    "build": {
+        "dockerfile": "Dockerfile",
+        // Update 'VARIANT' to pick a Bun version.
+        "args": {
+            "VARIANT": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+		"ms-vscode-remote.remote-containers",
+		"usernamehw.errorlens",
+		"csstools.postcss",
+		"wayou.vscode-todo-highlight",
+		"mhutchie.git-graph",
+		"jock.svg",
+		"bradlc.vscode-tailwindcss",
+		"Gruntfuggly.todo-tree",
+		"Supermaven.supermaven",
+		"bradlc.vscode-tailwindcss"
+            ]
+        }
+    }
+}
