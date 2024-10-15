@@ -1,10 +1,10 @@
-name: 'Build bun Image'
+name: 'Build Deno Image'
 
 on:
   workflow_dispatch:
     inputs:
       bunVersion:
-        description: 'Bun Version'
+        description: 'Deno Version'
         required: true
         type: string
       setLatest:
@@ -56,7 +56,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           build-args: |
-            VARIANT=${{ inputs.bunVersion }}
+            VARIANT=${{ inputs.denoVersion }}
           file: .devcontainer/Dockerfile
           platforms: |
             linux/amd64
