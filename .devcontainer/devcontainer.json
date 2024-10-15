@@ -1,8 +1,8 @@
 {
-    "name": "Bun",
+    "name": "Deno",
     "build": {
         "dockerfile": "Dockerfile",
-        // Update 'VARIANT' to pick a Bun version.
+        // Update 'VARIANT' to pick a Deno version.
         "args": {
             "VARIANT": "latest"
         }
