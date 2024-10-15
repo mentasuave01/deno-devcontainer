@@ -10,11 +10,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     ca-certificates \
     && apt-get clean
-
-
-# Set up nvm environment
-ENV NODE_VERSION lts/*
-
+    
 # Install nvm
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
