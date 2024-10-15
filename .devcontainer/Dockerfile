@@ -1,6 +1,5 @@
-ARG VARIANT=latest
 # Get latest Deno from docker Hub
-FROM denoland/deno:${VARIANT}
+FROM denoland/deno:latest
 
 # Install required system packages
 RUN apt-get update && apt-get install -y \
